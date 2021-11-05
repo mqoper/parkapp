@@ -1,0 +1,10 @@
+<div>Hello</div>
+
+<%= link_to 'Back', places_path %>
+
+<%= form_with model: @place do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.range_field :status, in: 0..1 %>
+  <%= f.submit %>
+<% end %>
